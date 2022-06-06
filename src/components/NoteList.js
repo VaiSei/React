@@ -1,9 +1,10 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 
-import Card from "./PostCard";
+import Card from "./NoteCard";
 
-function PostList({posts}) {
+function NoteList({notes}) {
+    
     return (
         <div css={css`
         display:flex;
@@ -15,10 +16,10 @@ function PostList({posts}) {
         
       `}
         >
-        {posts.map((item)=> 
+        {notes.map((item)=> 
             (<Card key={item.id} data={item}/> 
         )) }
         </div>
     );
 }
-export default PostList;
+export default NoteList;

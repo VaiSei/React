@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 
-const Card=({data:{note_name, date, discription}})=> (
+const Card=({data:{name, date, discription}})=> (
     <div css={css`
     width: 25%;
     margin: 20px;
@@ -24,7 +24,7 @@ const Card=({data:{note_name, date, discription}})=> (
         @media(max-width:990px){
             font-size:18px;
         }
-        `}>{note_name}</div>
+        `}>{name}</div>
       <div css={css`
         padding-top:10px;
         margin-bottom:10px;
